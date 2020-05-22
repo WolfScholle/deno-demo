@@ -6,4 +6,4 @@ export * from "https://deno.land/std@v0.50.0/http/server.ts";
 /// <reference path="https://deno.land/x/date_fns/intervalToDuration/index.d.ts" />
 export { intervalToDuration } from "https://deno.land/x/date_fns/index.js";
 
-export { Application } from "https://deno.land/x/oak/mod.ts";
+export { Application, Context } from "https://deno.land/x/oak/mod.ts";

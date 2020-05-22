@@ -1,14 +1,9 @@
 import { Application } from "./deps.ts";
-import { getStringUntil1337, getTimeUntil1337 } from "./leet.helpers.ts";
+import { handleTimeUntil1337 } from "./leet.controller.ts";
 
 const app = new Application();
 
-app.use((context) => {
-  const headers = new Headers();
-  headers.append("Content-Type", "text/html; charset=UTF-8");
-  context.response.headers = headers;
-  context.response.body = getStringUntil1337(getTimeUntil1337(new Date()));
-});
+app.use(handleTimeUntil1337);
 
 app.listen("localhost:8000");
 console.log("http://localhost:8000/");
