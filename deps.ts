@@ -5,3 +5,5 @@ export * from "https://deno.land/std@v0.50.0/http/server.ts";
 // ... or the previous attempt was only complaining about the .js file
 /// <reference path="https://deno.land/x/date_fns/intervalToDuration/index.d.ts" />
 export { intervalToDuration } from "https://deno.land/x/date_fns/index.js";
+
+export { Application } from "https://deno.land/x/oak/mod.ts";
